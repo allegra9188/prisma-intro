@@ -78,7 +78,7 @@ router.put('/:id', async (req,res,next)=> {
 });
 
 
-router.delete('./:id', async(req,res,next)=> {
+router.delete('/:id', async(req,res,next)=> {
     try {
         const id = +req.params.id;
 
@@ -98,7 +98,7 @@ router.delete('./:id', async(req,res,next)=> {
 })
 
 
-router.get('./:id/books', async (req,res,next) => {
+router.get('/:id/books', async (req,res,next) => {
     try{
         const id = +req.params.id;
 
@@ -117,7 +117,7 @@ router.get('./:id/books', async (req,res,next) => {
 })
 
 
-router.post('./:id/books', async(req,res,next)=> {
+router.post('/:id/books', async(req,res,next)=> {
     try{
         const id = +req.params.id;
 
